@@ -1,4 +1,4 @@
-#include "menu_scene.h"
+#include "scene.h"
 
 menu_scene::menu_scene(scene_controller* controller) : scene(controller)
 {

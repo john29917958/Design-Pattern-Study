@@ -36,19 +36,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="battle_scene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="start_scene.h">
-      <Filter>Header Files\scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="menu_scene.h">
-      <Filter>Header Files\scenes</Filter>
-    </ClInclude>
     <ClInclude Include="scene.h">
       <Filter>Header Files\scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="scene_controller.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

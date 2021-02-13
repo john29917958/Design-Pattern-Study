@@ -1,6 +1,5 @@
 #include <iostream>
-#include "scene_controller.h"
-#include "start_scene.h"
+#include "scene.h"
 
 int main()
 {

@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="battle_scene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu_scene.cpp" />
     <ClCompile Include="scene.cpp" />
@@ -158,10 +159,7 @@
     <ClCompile Include="start_scene.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="menu_scene.h" />
     <ClInclude Include="scene.h" />
-    <ClInclude Include="scene_controller.h" />
-    <ClInclude Include="start_scene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

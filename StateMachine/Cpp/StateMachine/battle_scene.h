@@ -1,6 +1,6 @@
 #pragma once
-#ifndef MENU_SCENE_H
-#define MENU_SCENE_H
+#ifndef BATTLE_SCENE_H
+#define BATTLE_SCENE_H
 #include <iostream>
 #include "scene.h"
 

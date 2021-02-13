@@ -1,10 +1,7 @@
 #ifndef START_SCENE_H
 #define START_SCENE_H
 
-#include <iostream>
-#include "start_scene.h"
-
-class scene;
+#include "scene.h"
 
 start_scene::start_scene(scene_controller* controller) : scene(controller)
 {

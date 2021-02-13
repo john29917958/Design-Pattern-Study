@@ -1,4 +1,4 @@
-#include "scene_controller.h"
+#include "scene.h"
 
 scene_controller::scene_controller()
 {
