@@ -1,20 +1,20 @@
 #pragma once
 #ifndef SCENE_H
 #define SCENE_H
-#include "SceneController.h"
+#include "scene_controller.h"
 
-class SceneController;
+class scene_controller;
 
-class Scene
+class scene
 {
 public:
-	Scene(SceneController* controller);
-	virtual ~Scene();
+	scene(scene_controller* controller);
+	virtual ~scene();
 	virtual void start() = 0;
 	virtual void update() = 0;
 	virtual void end() = 0;
 protected:
-	SceneController* controller_;
+	scene_controller* controller_;
 };
 
 #endif

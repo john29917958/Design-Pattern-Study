@@ -1,11 +1,11 @@
-#include "Scene.h"
+#include "scene.h"
 
-Scene::Scene(SceneController* controller)
+scene::scene(scene_controller* controller)
 {
 	controller_ = controller;
 }
 
-Scene::~Scene()
+scene::~scene()
 {
 	controller_ = nullptr;
 }
