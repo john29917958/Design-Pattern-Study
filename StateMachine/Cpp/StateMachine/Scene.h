@@ -28,7 +28,7 @@ class scene
 {
 public:
 	scene(scene_controller* controller);
-	virtual ~scene();
+	virtual ~scene() = 0;
 	virtual void start() = 0;
 	virtual void update() = 0;
 	virtual void end() = 0;
@@ -40,7 +40,7 @@ class start_scene : public scene
 {
 public:
 	start_scene(scene_controller* controller);
-	~start_scene() = default;
+	~start_scene() override = default;
 
 	void start() override;
 	void update() override;
@@ -51,7 +51,7 @@ class menu_scene : public scene
 {
 public:
 	menu_scene(scene_controller* controller);
-	~menu_scene() = default;
+	~menu_scene() override = default;
 
 	void start() override;
 	void update() override;
@@ -62,7 +62,7 @@ class battle_scene : public scene
 {
 public:
 	battle_scene(scene_controller* controller);
-	~battle_scene() = default;
+	~battle_scene() override = default;
 	void start() override;
 	void update() override;
 	void end() override;

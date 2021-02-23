@@ -18,13 +18,26 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Old\Mediator\employee.h" />
+    <ClInclude Include="..\..\Old\Mediator\job.h" />
+    <ClInclude Include="..\..\Old\Mediator\manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Old\Mediator\customer_service.cpp" />
+    <ClCompile Include="..\..\Old\Mediator\employee.cpp" />
+    <ClCompile Include="..\..\Old\Mediator\lazy_programmer.cpp" />
+    <ClCompile Include="..\..\Old\Mediator\main.cpp" />
+    <ClCompile Include="..\..\Old\Mediator\manager.cpp" />
+    <ClCompile Include="..\..\Old\Mediator\programmer.cpp" />
+    <ClCompile Include="..\..\Old\Mediator\ui_ux_designer.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{B63CC44B-8D2F-4366-8E8F-13B46FC8E98F}</ProjectGuid>
+    <ProjectGuid>{F35EEE6F-A293-4301-9DD7-E996ECB8FA1C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <RootNamespace>Mediator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>Mediator</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -151,20 +164,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="customer_service.cpp" />
-    <ClCompile Include="employee.cpp" />
-    <ClCompile Include="lazy_programmer.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="manager.cpp" />
-    <ClCompile Include="programmer.cpp" />
-    <ClCompile Include="ui_ux_designer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="employee.h" />
-    <ClInclude Include="job.h" />
-    <ClInclude Include="manager.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
