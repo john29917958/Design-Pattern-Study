@@ -16,7 +16,7 @@ class employee
 {
 public:
 	employee(std::string name, manager* manager);
-	virtual ~employee() = default;
+	virtual ~employee() = 0;
 	std::string get_name() const;
 	int get_health() const;
 	moods get_mood() const;

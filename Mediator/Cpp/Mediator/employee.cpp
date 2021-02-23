@@ -9,6 +9,11 @@ employee::employee(std::string name, manager* manager)
 	manager_ = manager;
 }
 
+employee::~employee()
+{
+	
+}
+
 std::string employee::get_name() const
 {
 	return name_;
