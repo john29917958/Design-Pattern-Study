@@ -19,18 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Old\Mediator\employee.h" />
-    <ClInclude Include="..\..\Old\Mediator\job.h" />
-    <ClInclude Include="..\..\Old\Mediator\manager.h" />
+    <ClInclude Include="employee.h" />
+    <ClInclude Include="job.h" />
+    <ClInclude Include="manager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Old\Mediator\customer_service.cpp" />
-    <ClCompile Include="..\..\Old\Mediator\employee.cpp" />
-    <ClCompile Include="..\..\Old\Mediator\lazy_programmer.cpp" />
-    <ClCompile Include="..\..\Old\Mediator\main.cpp" />
-    <ClCompile Include="..\..\Old\Mediator\manager.cpp" />
-    <ClCompile Include="..\..\Old\Mediator\programmer.cpp" />
-    <ClCompile Include="..\..\Old\Mediator\ui_ux_designer.cpp" />
+    <ClCompile Include="customer_service.cpp" />
+    <ClCompile Include="employee.cpp" />
+    <ClCompile Include="lazy_programmer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="manager.cpp" />
+    <ClCompile Include="programmer.cpp" />
+    <ClCompile Include="ui_ux_designer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
