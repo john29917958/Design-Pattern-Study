@@ -10,7 +10,7 @@
 struct job;
 class manager;
 
-enum Moods { thrilled, good, normal, bad, angry };
+enum moods { thrilled, good, normal, bad, angry };
 
 class employee
 {
@@ -19,14 +19,14 @@ public:
 	virtual ~employee() = default;
 	std::string get_name() const;
 	int get_health() const;
-	Moods get_mood() const;
+	moods get_mood() const;
 	//get set jobs
 	virtual bool take_job(job job, bool is_force_mode = false);
 	virtual void do_job();
 protected:
 	std::string name_;
 	int health_;
-	Moods mood_;
+	moods mood_;
 	std::vector<job> jobs_;
 	manager* manager_;
 };

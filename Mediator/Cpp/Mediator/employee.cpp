@@ -19,7 +19,7 @@ int employee::get_health() const
 	return health_;
 }
 
-Moods employee::get_mood() const
+moods employee::get_mood() const
 {
 	return mood_;
 }
