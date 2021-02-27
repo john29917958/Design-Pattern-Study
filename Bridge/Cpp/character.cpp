@@ -7,15 +7,12 @@ character::character(int id, std::string name, int health, int mana)
 	name_ = name;
 	health_ = health;
 	mana_ = mana;
-	spell_ = new default_spell(10, 10, 10);
+	spell_ = std::make_shared<default_spell>(10, 10, 10);
 }
 
-character::~character()
-{
-	delete spell_;
-}
+character::~character() = default;
 
-void character::set_spell(spell* spell)
+void character::set_spell(std::shared_ptr<spell> spell)
 {
 	if (spell == nullptr)
 	{
