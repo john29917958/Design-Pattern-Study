@@ -5,7 +5,7 @@ human::human(int id, std::string name, int health, int mana) : character(id, nam
 
 }
 
-void human::set_spell(spell* spell)
+void human::set_spell(std::shared_ptr<spell> spell)
 {
 	character::set_spell(spell);
 	spell_->cost -= 10;
