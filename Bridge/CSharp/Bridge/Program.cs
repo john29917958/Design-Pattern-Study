@@ -26,7 +26,7 @@ namespace Bridge
             character.SetSpell(new CurseSpell(40, 60, 20));
             character.CastSpell();
 
-            character = new Vampire(3, "Prince", 100, 100);
+            character = new Vampire(2, "Prince", 100, 100);
             character.CastSpell();
             character.SetSpell(new FireSpell(30, 100, 20));
             character.CastSpell();

@@ -20,7 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="character.cpp" />
+    <ClCompile Include="curse_spell.cpp" />
+    <ClCompile Include="default_spell.cpp" />
+    <ClCompile Include="fire_spell.cpp" />
     <ClCompile Include="human.cpp" />
+    <ClCompile Include="ice_spell.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="orc.cpp" />
     <ClCompile Include="spell.cpp" />

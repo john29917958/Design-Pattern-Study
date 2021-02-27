@@ -12,6 +12,7 @@ class default_spell;
 class character
 {
 public:
+	virtual ~character() = 0;
 	virtual void set_spell(spell* spell);
 	virtual void cast_spell();
 	virtual void take_damage(int value);
@@ -21,9 +22,7 @@ protected:
 	int health_;
 	int mana_;
 	spell* spell_;
-
-	character(int id, std::string name, int health, int mana);
-	virtual ~character() = 0;
+	character(int id, std::string name, int health, int mana);	
 };
 
 class human : public character
