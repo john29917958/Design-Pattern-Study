@@ -6,7 +6,7 @@ vampire::vampire(int id, std::string name, int health, int mana) : character(id,
 	
 }
 
-void vampire::set_spell(spell* spell)
+void vampire::set_spell(std::shared_ptr<spell> spell)
 {
 	character::set_spell(spell);
 
@@ -19,7 +19,7 @@ void vampire::set_spell(spell* spell)
 	}
 }
 
-bool vampire::is_curse_spell(spell* the_spell)
+bool vampire::is_curse_spell(std::shared_ptr<spell> the_spell)
 {
-	return typeid(the_spell) == typeid(spell*);
+	return typeid(the_spell) == typeid(std::shared_ptr<spell>);
 }

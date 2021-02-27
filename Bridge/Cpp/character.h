@@ -13,7 +13,7 @@ class character
 {
 public:
 	virtual ~character() = 0;
-	virtual void set_spell(spell* spell);
+	virtual void set_spell(std::shared_ptr<spell> spell);
 	virtual void cast_spell();
 	virtual void take_damage(int value);
 protected:
@@ -21,7 +21,7 @@ protected:
 	std::string name_;
 	int health_;
 	int mana_;
-	spell* spell_;
+	std::shared_ptr<spell> spell_;
 	character(int id, std::string name, int health, int mana);	
 };
 
@@ -30,7 +30,7 @@ class human : public character
 public:
 	human(int id, std::string name, int health, int mana);
 	~human() = default;
-	void set_spell(spell* spell) override;
+	void set_spell(std::shared_ptr<spell> spell) override;
 	void cast_spell() override;
 };
 
@@ -47,9 +47,9 @@ class vampire : public character
 public:
 	vampire(int id, std::string name, int health, int mana);
 	~vampire() = default;
-	void set_spell(spell* spell) override;
+	void set_spell(std::shared_ptr<spell> spell) override;
 private:
-	static bool is_curse_spell(spell* the_spell);
+	static bool is_curse_spell(std::shared_ptr<spell> the_spell);
 };
 
 #endif

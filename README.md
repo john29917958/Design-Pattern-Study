@@ -1,2 +1,2 @@
 # Design-Pattern-Study
-My design pattern study project.
+A design pattern study project.
