@@ -9,6 +9,11 @@ employee::employee(std::string name, manager* manager)
 	manager_ = manager;
 }
 
+employee::~employee()
+{
+	
+}
+
 std::string employee::get_name() const
 {
 	return name_;
@@ -19,7 +24,7 @@ int employee::get_health() const
 	return health_;
 }
 
-Moods employee::get_mood() const
+moods employee::get_mood() const
 {
 	return mood_;
 }
