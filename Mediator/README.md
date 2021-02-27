@@ -1,6 +1,6 @@
 Mediator
 ===
-Scenario: When there are a great amount of subsystems that cooperate with each other, resulting in complex usage lines (how about 100 sub-systems with complex usage lines to each other?). Unlike the facade pattern, the mediator pattern is like a “Controller” in MVC system model.
+Scenario: When there are a great amount of subsystems that cooperate with each other, resulting in complex usage lines (how about 100 sub-systems with complex usage lines to each other?). Unlike the facade pattern, the mediator pattern is like a “Controller” in the MVC system model.
 
 Pattern: Groups complex execution order or subsystem interactions into a “mediator” class. Subsystems invoke the APIs provided by the “mediator” class.
 
