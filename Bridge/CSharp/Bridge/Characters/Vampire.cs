@@ -5,7 +5,7 @@ namespace Bridge.Characters
 {
     public class Vampire : Character
     {
-        public Vampire(int id, string name, int initHealth, int initMana) : base(id, name, initHealth, initMana)
+        public Vampire(int id, string name, int health, int mana) : base(id, name, health, mana)
         {
 
         }

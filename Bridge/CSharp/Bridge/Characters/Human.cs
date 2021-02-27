@@ -4,7 +4,7 @@ namespace Bridge.Characters
 {
     public class Human : Character
     {
-        public Human(int id, string name, int initHealth, int initMana) : base(id, name, initHealth, initMana)
+        public Human(int id, string name, int health, int mana) : base(id, name, health, mana)
         {
 
         }

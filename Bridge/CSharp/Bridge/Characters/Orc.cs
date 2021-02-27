@@ -2,7 +2,7 @@
 {
     public class Orc : Character
     {
-        public Orc(int id, string name, int initHealth, int initMana) : base(id, name, initHealth, initMana)
+        public Orc(int id, string name, int health, int mana) : base(id, name, health, mana)
         {
 
         }

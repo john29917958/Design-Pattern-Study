@@ -11,12 +11,12 @@ namespace Bridge.Characters
         public int Mana { get; protected set; }
         public Spell Spell { get; protected set; }
 
-        protected Character(int id, string name, int initHealth, int initMana)
+        protected Character(int id, string name, int health, int mana)
         {
             Id = id;
             Name = name;
-            Health = initHealth;
-            Mana = initMana;
+            Health = health;
+            Mana = mana;
             Spell = new DefaultSpell(10, 10, 10);
         }
 
@@ -42,7 +42,7 @@ namespace Bridge.Characters
         {
             Health -= value;
             if (Health < 0) Health = 0;
-            Console.WriteLine($"{Name} have {Health} health point after taking {value} damage points");
+            Console.WriteLine($"{Name} have {Health} health points after taking {value} damage points");
         }
     }
 }
