@@ -10,7 +10,7 @@ void remove_broken_armor_visitor::visit_armor(std::shared_ptr<armor> armor)
 {
 	if (armor->get_endurance() == 0)
 	{
-		backpack_->remove(armor);
 		std::cout << "Armor \"" + armor->get_name() + "\" is broken, remove it." << std::endl;
+		backpack_->remove(armor);		
 	}
 }

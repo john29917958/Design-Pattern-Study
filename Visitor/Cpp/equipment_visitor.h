@@ -28,7 +28,7 @@ private:
 	int loading_;
 };
 
-class remove_broken_armor_visitor : equipment_visitor
+class remove_broken_armor_visitor : public equipment_visitor
 {
 public:
 	remove_broken_armor_visitor(std::shared_ptr<backpack> backpack);
@@ -38,7 +38,7 @@ private:
 	std::shared_ptr<backpack> backpack_;
 };
 
-class drop_equipment_visitor : equipment_visitor
+class drop_equipment_visitor : public equipment_visitor
 {
 public:
 	drop_equipment_visitor(std::shared_ptr<equipment> equipment, std::shared_ptr<backpack> backpack);

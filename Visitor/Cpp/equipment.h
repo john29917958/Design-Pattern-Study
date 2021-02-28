@@ -6,7 +6,7 @@
 
 class equipment_visitor;
 
-class equipment
+class equipment : std::enable_shared_from_this<equipment>
 {
 public:
 	virtual ~equipment() = 0;
