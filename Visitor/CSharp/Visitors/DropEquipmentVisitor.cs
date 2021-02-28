@@ -26,12 +26,22 @@ namespace Visitor.Visitors
 
         public override void VisitArmor(Armor armor)
         {
-            VisitEquipment(armor);
+            if (armor == _equipment)
+            {
+                Console.WriteLine($"Drops equipment \"{armor.Name}\". Creates slash effect.");
+                _backpack.Remove(armor);
+                GameSystem.Instantiate(armor);
+            }
         }
 
         public override void VisitWeapon(Weapon weapon)
         {
-            VisitEquipment(weapon);
+            if (weapon == _equipment)
+            {
+                Console.WriteLine($"Drops equipment \"{weapon.Name}\". Creates flash effect.");
+                _backpack.Remove(weapon);
+                GameSystem.Instantiate(weapon);
+            }
         }
     }
 }

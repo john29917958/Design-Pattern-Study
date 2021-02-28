@@ -20,10 +20,20 @@ void drop_equipment_visitor::visit_equipment(std::shared_ptr<equipment> equipmen
 
 void drop_equipment_visitor::visit_weapon(std::shared_ptr<weapon> weapon)
 {
-	visit_equipment(weapon);
+	if (weapon == equipment_)
+	{
+		std::cout << "Drops weapon \"" + weapon->get_name() + "\". Creates slash effect." << std::endl;
+		backpack_->remove(weapon);
+		game_system::instantiate(weapon.get());
+	}
 }
 
 void drop_equipment_visitor::visit_armor(std::shared_ptr<armor> armor)
 {
-	visit_equipment(armor);
+	if (armor == equipment_)
+	{
+		std::cout << "Drops equipment \"" + armor->get_name() + "\". Creates flash effect." << std::endl;
+		backpack_->remove(armor);
+		game_system::instantiate(armor.get());
+	}
 }
