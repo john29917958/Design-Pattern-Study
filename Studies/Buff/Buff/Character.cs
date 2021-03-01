@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using BuffPattern.Attributeses;
 using BuffPattern.Buffs;
+using BuffPattern.Equipments;
 
 namespace BuffPattern
 {
-    public class Character : IAttributes
+    public class Character : IAttributes, IUpdateable
     {
-        public int Level { get; protected set; }
+        public int Level { get; set; }
 
         public int MaxHealth => Attributes.MaxHealth;
         public int MaxMana => Attributes.MaxMana;
@@ -17,6 +18,7 @@ namespace BuffPattern
         public BaseAttributes BaseAttributes { get; protected set; }
 
         public readonly List<Buff> Buffs;
+        public readonly List<Equipment> Equipments;
 
         protected IAttributes Attributes
         {
@@ -37,7 +39,21 @@ namespace BuffPattern
         {
             Level = level;
             BaseAttributes = attributes;
-            Buffs = new List<Buff>();
+            Equipments = new List<Equipment>();
+            Buffs = new List<Buff>();            
+        }
+
+        public void Update()
+        {
+            foreach (Buff buff in Buffs.ToArray())
+            {
+                buff.Update();
+            }
+
+            foreach (Equipment equipment in Equipments.ToArray())
+            {
+                equipment.Update();
+            }
         }
     }
 }
