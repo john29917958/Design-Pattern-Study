@@ -1,4 +1,4 @@
-#include "attrubutes.h"
+#include "attributes.h"
 
 attributes::~attributes() = default;
 
@@ -25,9 +25,4 @@ int attributes::get_defense()
 int attributes::get_critical()
 {
 	return critical_;
-}
-
-base_attributes::base_attributes(int max_health, int max_mana, int attack, int defense, int critical)
-{
-	
 }

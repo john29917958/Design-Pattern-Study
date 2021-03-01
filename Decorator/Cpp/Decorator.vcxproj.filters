@@ -13,10 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\attributes">
+      <UniqueIdentifier>{295631d7-5dac-42d0-91a3-218a52a43061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\attributes">
+      <UniqueIdentifier>{3349e955-f504-4d01-9c7c-af72637996da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Decorator.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="attributes.cpp">
+      <Filter>Source Files\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="base_attributes.cpp">
+      <Filter>Source Files\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="attributes_decorator.cpp">
+      <Filter>Source Files\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="level_decorator.cpp">
+      <Filter>Source Files\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="fairy_gun_i_decorator.cpp">
+      <Filter>Source Files\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="attributes_decorator.h">
+      <Filter>Header Files\attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="attributes.h">
+      <Filter>Header Files\attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

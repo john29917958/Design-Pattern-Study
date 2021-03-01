@@ -151,7 +151,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Decorator.cpp" />
+    <ClCompile Include="attributes.cpp" />
+    <ClCompile Include="attributes_decorator.cpp" />
+    <ClCompile Include="base_attributes.cpp" />
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="fairy_gun_i_decorator.cpp" />
+    <ClCompile Include="level_decorator.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="attributes_decorator.h" />
+    <ClInclude Include="attributes.h" />
+    <ClInclude Include="character.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

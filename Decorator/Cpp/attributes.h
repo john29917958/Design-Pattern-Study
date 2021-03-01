@@ -8,11 +8,11 @@ class attributes
 public:
 	attributes() = default;
 	virtual ~attributes() = 0;
-	virtual int get_max_health() = 0;
-	virtual int get_max_mana() = 0;
-	virtual int get_attack() = 0;
-	virtual int get_defense() = 0;
-	virtual int get_critical() = 0;
+	virtual int get_max_health();
+	virtual int get_max_mana();
+	virtual int get_attack();
+	virtual int get_defense();
+	virtual int get_critical();
 protected:
 	int max_health_;
 	int max_mana_;
