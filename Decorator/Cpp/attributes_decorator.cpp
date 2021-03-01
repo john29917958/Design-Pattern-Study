@@ -1,9 +1,9 @@
 #include "attributes_decorator.h"
 
-attributes_decorator::attributes_decorator(std::shared_ptr<base_attributes> base_attributes, std::shared_ptr<attributes> attributes)
+attributes_decorator::attributes_decorator(std::shared_ptr<base_attributes> base_attributes, std::shared_ptr<attributes> parent_attributes)
 {
 	base_attributes_ = base_attributes;
-	parent_attributes_ = parent_attributes_;
+	parent_attributes_ = parent_attributes;
 }
 
 attributes_decorator::~attributes_decorator() = default;

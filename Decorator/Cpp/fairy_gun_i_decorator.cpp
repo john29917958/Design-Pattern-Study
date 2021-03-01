@@ -1,6 +1,6 @@
 #include "attributes_decorator.h"
 
-fairy_gun_i_decorator::fairy_gun_i_decorator(std::shared_ptr<base_attributes> base_attributes, std::shared_ptr<attributes> attributes, int level) : attributes_decorator(base_attributes, attributes)
+fairy_gun_i_decorator::fairy_gun_i_decorator(std::shared_ptr<base_attributes> base_attributes, std::shared_ptr<attributes> parent_attributes, int level) : attributes_decorator(base_attributes, parent_attributes)
 {
 	this->level = level;
 }
