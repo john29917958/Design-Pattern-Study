@@ -14,6 +14,10 @@ namespace BuffPattern
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Press enter to start");
+            Console.ReadLine();
+            Console.Clear();
+
             Character character = new Character(1, new BaseAttributes(100, 50, 10, 5, 1));
             _description = $"Level buff Lv{character.Level}";
             character.Buffs.Add(new LevelBuff(character));
