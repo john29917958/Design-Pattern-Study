@@ -9,7 +9,7 @@ namespace BuffPattern
     class Program
     {
         private static bool _shouldUpdate = true;
-        private static readonly object Lck = new object();
+        private static readonly object Lock = new object();
 
         static void Main(string[] args)
         {
@@ -19,14 +19,14 @@ namespace BuffPattern
 
             Thread.Sleep(1000);
 
-            lock (Lck) character.Level += 1;
+            lock (Lock) character.Level += 1;
             Thread.Sleep(1000);
 
-            lock (Lck) character.Level += 1;
+            lock (Lock) character.Level += 1;
             Thread.Sleep(1000);
 
             Weapon weapon = new FairyGunIWeapon("Fairy Gun I", 1, 5, 10);
-            lock (Lck) weapon.AttachTo(character);
+            lock (Lock) weapon.AttachTo(character);
             Thread.Sleep(1000);
 
             weapon.Level += 1;
@@ -36,14 +36,17 @@ namespace BuffPattern
             Thread.Sleep(1000);
 
             Armor flashArmor = new FlashArmor("Flash armor", 1, 10, 50);
-            lock (Lck) flashArmor.AttachTo(character);
+            lock (Lock) flashArmor.AttachTo(character);
             Thread.Sleep(4000);
 
-            lock (Lck) flashArmor.Detach();
+            lock (Lock) flashArmor.Detach();
             Thread.Sleep(1000);
 
-            lock(Lck) weapon.Detach();
-            Thread.Sleep(3000);
+            lock(Lock) weapon.Detach();
+            Thread.Sleep(1000);
+
+            lock(Lock) new DirectPointBuff(new Attributes(-50, 0, -20, 0, 0), 2000).AttachTo(character);
+            Thread.Sleep(5000);
         }
 
         private static void UpdateCharacter(object param)
@@ -52,7 +55,7 @@ namespace BuffPattern
 
             while (_shouldUpdate)
             {
-                lock (Lck)
+                lock (Lock)
                 {
                     character.Update();
 

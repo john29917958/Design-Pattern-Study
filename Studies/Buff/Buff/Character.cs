@@ -31,6 +31,12 @@ namespace BuffPattern
                     buff.Applies(attributes, BaseAttributes);
                 }
 
+                if (attributes.MaxHealth < 0) attributes.MaxHealth = 0;
+                if (attributes.MaxMana < 0) attributes.MaxMana = 0;
+                if (attributes.Attack < 0) attributes.Attack = 0;
+                if (attributes.Defense < 0) attributes.Defense = 0;
+                if (attributes.Critical < 0) attributes.Critical = 0;
+
                 return attributes;
             }
         }        
