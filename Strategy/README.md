@@ -1,6 +1,6 @@
 Strategy
 ===
-Scenario: When some calculation logics and algorithms need to be switched dynamically.
+Scenario: When calculation logics or algorithms can be extended, or be switched dynamically.
 
 Pattern: A context object contains a strategy object that can be replaced at runtime.
 
