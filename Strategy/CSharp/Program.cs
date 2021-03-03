@@ -13,7 +13,7 @@ namespace Strategy
                 Level = 1,
                 Strength = 10,
                 Wisdom = 5
-            }, new WarriorAttributesStrategy());
+            }, new WarriorAttributeStrategy());
             PrintCharacter(character);
 
             Console.WriteLine("Magica");
