@@ -11,7 +11,7 @@ class character
 public:
 	vector position;	
 
-	character() = default;
+	character();
 	~character() = default;
 
 	int get_health();

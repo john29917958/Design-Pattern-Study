@@ -10,6 +10,7 @@ public:
 	float y;
 	float z;
 
+	vector();
 	vector(float x, float y, float z);
 	~vector() = default;
 
