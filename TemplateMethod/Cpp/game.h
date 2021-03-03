@@ -3,6 +3,7 @@
 #ifndef GAME_H
 #define GAME_H
 #include <memory>
+#include "character.h"
 #include "vector.h"
 
 struct vector;
