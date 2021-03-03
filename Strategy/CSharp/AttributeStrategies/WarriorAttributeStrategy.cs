@@ -1,6 +1,6 @@
 ﻿namespace Strategy.AttributeStrategies
 {
-    public class WarriorAttributesStrategy : AttributeStrategy
+    public class WarriorAttributeStrategy : AttributeStrategy
     {
         public override int Health => Properites.Level * Properites.Strength * 5;
         public override int Mana => Properites.Level * Properites.Wisdom;

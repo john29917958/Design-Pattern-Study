@@ -1,6 +1,6 @@
 Template Method
 ===
-Scenario: When there exists identical operation flow, the “implementation” of each operation can be different.
+Scenario: When there exists similar operation flow, the “implementation” of each operation can be different.
 
 Pattern:
 - Abstract class: A concrete method that defines flow of operation, executes all abstract methods in specific order
