@@ -16,7 +16,7 @@
         protected override bool IsSkillCooling()
         {
             // No cooling time for default spell.
-            return true;
+            return false;
         }
 
         protected override bool IsAnyTargetInAttackRange()

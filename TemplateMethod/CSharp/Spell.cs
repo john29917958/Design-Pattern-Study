@@ -9,7 +9,6 @@ namespace TemplateMethod
 
         public SpellCastingValidator Validator
         {
-            get { return _validator; }
             set
             {
                 if (value == null)
@@ -27,7 +26,7 @@ namespace TemplateMethod
 
         public void Cast()
         {
-            if (Validator == null || Validator.IsCastable())
+            if (_validator == null || _validator.IsCastable())
             {
                 Console.WriteLine("Casts spell");
             }
