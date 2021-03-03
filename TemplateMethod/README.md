@@ -9,6 +9,6 @@ Pattern:
 Example: Pre-checking flow of magic spell casting:
 1. Checks if power value is enough
 2. Checks if the cooling CD time is over
-3. Checks if the target enemy is within attacking range <- This step can be different in different types of spell
+3. Checks if any target enemy is within attacking range <- This step can be different in different types of spell
 
 ![UML](UML.jpg)
